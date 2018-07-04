@@ -14,6 +14,24 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+
+
+# Image files
+output/*.png
+
+# Matlab files
+data/MatlabData/2008/*.mat
+data/MatlabData/2009/*.mat
+data/MatlabData/2010/*.mat
+data/MatlabData/2011/*.mat
+data/MatlabData/2012/*.mat
+data/MatlabData/2013/*.mat
+data/MatlabData/2014/*.mat
+data/MatlabData/2015/*.mat
+data/MatlabData/2016/*.mat
+data/MatlabData/2017/*.mat
+data/MatlabData/*.mat
+
 # Windows shortcuts
 *.lnk
 
