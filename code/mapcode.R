@@ -9,6 +9,9 @@ library(sp)
 library(rgdal)
 library(rgeos)
 
+#Source processing function ----------
+source("code/rasterFun.R")
+
 #load data -----------
 Locations=read.csv("data/Locations.csv")
 
@@ -189,3 +192,5 @@ OverallAverage <- masterDat%>%group_by(ID,var)%>%
 ## Bind all of the data together
 OutputData <- rbind(extractedData,extractedData_yr)
 
+#save ouptut
+write.csv(OutputData,"output/DataExtractions.csv",row.names = F)
