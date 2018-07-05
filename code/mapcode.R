@@ -181,7 +181,7 @@ OverallAverage <- masterDat%>%group_by(ID,var)%>%
             
             #save the plot
             P1 <- output$plot
-            ggsave(paste0("output/",j,"_",i,"_",yr,".png"),P1,height=5,width=6)
+            ggsave(paste0("output/",i,"/",j,"/",j,"_",i,"_",yr,".png"),P1,height=5,width=6)
             
           }#end of season loop
         }#end of year loop
