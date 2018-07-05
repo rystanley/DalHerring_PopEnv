@@ -14,9 +14,19 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-
 # Image files
-output/*.png
+output/SST/Winter/*.png
+output/SST/Spring/*.png
+output/SST/Fall/*.png
+output/SST/Summer/*.png
+output/SSS/Winter/*.png
+output/SSS/Spring/*.png
+output/SSS/Fall/*.png
+output/SSS/Summer/*.png
+output/BT/Winter/*.png
+output/BT/Spring/*.png
+output/BT/Fall/*.png
+output/BT/Summer/*.png
 
 # Matlab files
 data/MatlabData/2008/*.mat
