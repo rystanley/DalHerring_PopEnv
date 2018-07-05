@@ -53,7 +53,7 @@ points(Locations$Long,Locations$Lat,pch=19,cex=1.5) #Add points
 points(Locations[Locations$PopID %in% c("Ste","BDO"),"Long"],Locations[Locations$PopID %in% c("Ste","BDO"),"Lat"],col="red",pch=19,cex=1.5)
 
 #bump the coordinates to the water
-Locations[Locations$PopID=="Ste","Long"]=Locations[Locations$PopID=="Ste","Long"]-0.5
+Locations[Locations$PopID=="Ste","Long"]=Locations[Locations$PopID=="Ste","Long"]-0.15
 Locations[Locations$PopID=="BDO","Lat"]=Locations[Locations$PopID=="BDO","Lat"]+0.5
 Locations[Locations$PopID=="BDO","Long"]=Locations[Locations$PopID=="BDO","Long"]+0.7
 points(Locations[Locations$PopID %in% c("Ste","BDO"),"Long"],Locations[Locations$PopID %in% c("Ste","BDO"),"Lat"],col="blue",pch=19,cex=1.5)
@@ -72,10 +72,9 @@ xydata <- data.frame(x=as.vector(coords$glamt),y=as.vector(coords$gphit))
     months <- c("Jan","Feb","March","April","May","June","July","Aug","Sept","Oct","Nov","Dec")
     years <- 2008:2017 # this is the data available
     months <- paste0("m",1:12,".mat")
-    Temps <- c("BT","SST")
+    Temps <- c("BT","SST","SSS")
 
-    curdir <- getwd() #save the root directory 
-
+    
   #iterative extraction    
     masterdata <- NULL
     
